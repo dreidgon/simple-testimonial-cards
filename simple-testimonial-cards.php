@@ -105,6 +105,7 @@ function stc_delete_testimonials_on_uninstall() {
         'post_type' => 'stc_testimonial',
         'numberposts' => -1,/*number of posts to get in my list, so I pass -1 to bring all posts */
         'post_status'   => 'any',
+        'fields' => 'ids', // only get post IDs
     ]);
 
     // Delete each testimonial
