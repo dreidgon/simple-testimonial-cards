@@ -33,6 +33,7 @@ function stc_register_testimonial_cpt() {
         'public' => true,
         'supports'  => array( 'title', 'editor', 'thumbnail' ),/*To add items on post,if left withouth 'supports' it will create some of them */
         'menu_icon' => 'dashicons-testimonial',
+        'can_export' => true
 
 
     ]);
